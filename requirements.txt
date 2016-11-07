@@ -1,0 +1,16 @@
+ipython
+Flask-Script
+gunicorn
+gevent
+raven
+
+flask[blinker]
+peewee
+pymysql
+python-decouple
+redis
+celery
+cerberus
+requests
+ujson
+pyDes
