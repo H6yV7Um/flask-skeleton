@@ -7,6 +7,11 @@ from services import app, sentry
 from utils.response import RetCode, response
 
 
+@app.errorhandler(400)
+def bad_request(error):
+    return response(code=RetCode.PARAMS_ERROR)
+
+
 @app.errorhandler(404)
 def api_not_found(error):
     return response(code=RetCode.ENTRY_NOT_FOUND)
